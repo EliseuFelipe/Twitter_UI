@@ -11,7 +11,7 @@ const Cadastro: React.FC = () => {
                 <BackIcon/>
                 <TwitterIcon/>
             </Header>
-
+            
             <span className="titulo">Criar sua conta</span>
 
             <Inputs>
@@ -24,8 +24,8 @@ const Cadastro: React.FC = () => {
                 </form>
 
                 <Message>
-                    <span>Data de nascimento</span>
-                    <span>Isso não será exibido publicamente. Confirme sua própria idade, 
+                    <span className="cabecalho">Data de nascimento</span>
+                    <span className="msg">Isso não será exibido publicamente. Confirme sua própria idade, 
                     mesmo se esta conta for de empresa, de um animal de estimação ou outros.</span>
                 </Message>
 

@@ -4,7 +4,14 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+
+    height: 500px;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+    min-width: 450px;
+
+    box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);;
 `;
 
 export const Header = styled.div`

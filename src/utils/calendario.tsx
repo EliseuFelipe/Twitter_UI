@@ -10,14 +10,14 @@ function Calendario(){
 
     var currentTime = new Date()
     var anos = [];
-    for(var i = currentTime.getFullYear(); i>=1900; i--)
+    for(i = currentTime.getFullYear(); i>=1900; i--)
         anos.push(i);
     
 
     return( 
         <>
 
-            <select id="mes" name="mes" placeholder="mes">
+            <select id="mes" name="mes" placeholder="mes" className="mes">
                 { meses.map(item => {
                     return(
                         <option value={item}>{item}</option>
@@ -25,7 +25,7 @@ function Calendario(){
                 }) }
             </select>
 
-            <select id="dia" name="dia" placeholder="dia">
+            <select id="dia" name="dia" placeholder="dia" className="dia">
                 { dias.map(item => {
                     return(
                         <option value={item}>{item}</option>
@@ -33,7 +33,7 @@ function Calendario(){
                 }) }
             </select>
 
-            <select id="ano" name="ano" placeholder="ano">
+            <select id="ano" name="ano" placeholder="ano" className="ano">
                 { anos.map(item => {
                     return(
                         <option value={item}>{item}</option>
